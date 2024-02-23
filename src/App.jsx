@@ -1,6 +1,6 @@
 export default function App() {
 
-  const nome = "João";
+  const nome = "Guilherme";
   let sobreNome = "Santos";
 
   return(
