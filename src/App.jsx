@@ -4,8 +4,6 @@ export default function App(){
   return (
     <main>
       <Header/>
-      <Header/>
-      <Header/>
       <Footer/>
     </main>
   );
