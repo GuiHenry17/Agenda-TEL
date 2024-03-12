@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -22,4 +23,17 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+header{
+    height: 50px;
+    color: rgb(199, 97, 97);
+}
+footer{
+    height: 100px;
+    color: rgb(27, 56, 88);      
+}
+body{
+    background-color: lightgoldenrodyellow;
+    font-weight: bold;
 }

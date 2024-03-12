@@ -5,10 +5,10 @@ import "./global.css"
 
 export default function App(){
   return (
-    <div>
+    <main>
       <Header/>
       <Footer/>
-    </div>
+    </main>
   );
 
   
