@@ -4,11 +4,26 @@ export default function Main() {
 
     const [nome, setNome] = useState("");
     const [telefone, setTelefone] = useState("");
+    const [listaContatos, setListaContatos] = useState([]);
+    const [cpf, setCpf] = useState("");
 
+    const registrar = (event) => {
+        event.preventDefault();
+        alert("Contato Registrado!");
+
+        setListaContatos([...listaContatos,
+        {
+            NOME: nome,
+            TELEFONE: telefone,
+            CPF: cpf
+        }
+      ]);
+    }
+    console.table(listaContatos)
     return (
         <main>
-            <form>
-                <label>
+            <form id="principal" action="" onSubmit={registrar}>
+                <label htmlFor="nome">
                     Nome: ⠀
                     <input
                         type="text"
@@ -18,15 +33,8 @@ export default function Main() {
                             (event) => setNome(event.target.value)
                         } />
                 </label>
-                <button>Cadastrar</button>
-                <br/>
 
-                {nome}
-                <br/>
-                <br/>
-                <br/>
-
-                <label>
+                <label className="inputas" htmlFor="telefone">
                     Telefone: ⠀
                     <input
                         type="tel"
@@ -35,11 +43,20 @@ export default function Main() {
                         onChange={
                             (event) => setTelefone(event.target.value)
                         } />
-                <button>Cadastrar</button>
-                <br/>
-                    {telefone}
-
                 </label>
+
+                <label className ="inputas" htmlFor="cpf">
+                    CPF: ⠀
+                    <input
+                        type="number"
+                        name="cpf"
+                        id="cpf"
+                        onChange={
+                            (event) => setCpf(event.target.value)
+                        } />
+                </label>
+
+                <button id="submitar">Registrar</button>
 
             </form>
         </main>

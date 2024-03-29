@@ -40,3 +40,22 @@ nome{
 telefone{
     color: red;
 }
+
+#submitar{
+    margin-left: 25px;
+    border: none;
+    background-color: #721a66;
+    color: white;
+    height: 25px;
+    border-radius: 7px;
+}
+
+.inputas{
+    margin-left: 25px;
+}
+
+#principal{
+    display: flex;
+    justify-content: center;
+    margin-top:25px;
+}
