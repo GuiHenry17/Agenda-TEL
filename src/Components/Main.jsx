@@ -4,8 +4,8 @@ export default function Main() {
 
     const [nome, setNome] = useState("");
     const [telefone, setTelefone] = useState("");
-    const [listaContatos, setListaContatos] = useState([]);
     const [cpf, setCpf] = useState("");
+    const [listaContatos, setListaContatos] = useState([]);
 
     const registrar = (event) => {
         event.preventDefault();
@@ -19,6 +19,9 @@ export default function Main() {
         }
       ]);
     }
+    
+
+
     console.table(listaContatos)
     return (
         <main>
@@ -59,6 +62,15 @@ export default function Main() {
                 <button id="submitar">Registrar</button>
 
             </form>
+
+            {
+            listaContatos.map((contato, index) => 
+            <div className="mapdiv" key={index}> 
+                <p className="mapnome">{contato.NOME}</p>
+                <p className="maptel">{contato.TELEFONE}</p>
+                <p className="mapcpf">{contato.CPF}</p>
+            </div>
+            )}
         </main>
     );
 }

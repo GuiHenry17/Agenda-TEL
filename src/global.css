@@ -59,3 +59,26 @@ telefone{
     justify-content: center;
     margin-top:25px;
 }
+
+.mapnome{
+    margin-top:25px;
+    margin-right: 25px;
+}
+
+.maptel{
+    margin-top:25px;
+    margin-right: 25px;
+    margin-bottom: 0px;
+}
+
+.mapcpf{
+    margin-top:25px;
+    margin-right: 25px;
+}
+
+.mapdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+}
