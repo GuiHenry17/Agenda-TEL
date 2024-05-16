@@ -3,6 +3,7 @@ import Footer from "./Components/Footer";
 import Main from "./Components/Main"
 import "./global.css"
 
+//Jsx
 export default function App(){
   return (
     <main>

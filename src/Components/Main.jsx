@@ -24,7 +24,7 @@ export default function Main() {
     }
 
     const removerContato = (index) => {
-        const novaLista = listaContatos.filter((_, i) => i !== index);
+        const novaLista = listaContatos.filter((_, i) => i != index);
         setListaContatos(novaLista);
     }
 
@@ -65,6 +65,7 @@ export default function Main() {
                         name="cpf"
                         id="cpf"
                         value={cpf}
+                        maxLength={11}
                         onChange={
                             (event) => setCpf(event.target.value)
                         } />
@@ -86,15 +87,6 @@ export default function Main() {
                     </div>
                 ))}
             </div>
-
-            {
-                listaContatos.map((contato, index) =>
-                    <div className="mapdiv" key={index}>
-                        <p className="mapnome">{contato.NOME}</p>
-                        <p className="maptel">{contato.TELEFONE}</p>
-                        <p className="mapcpf">{contato.CPF}</p>
-                    </div>
-                )}
 
         </main>
     );
